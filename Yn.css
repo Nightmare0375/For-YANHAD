@@ -1,0 +1,143 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: azure;
+	background-image: url(Media/background.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	font-family: arial;
+	font-size: 1.5em;
+	text-align: center;
+}
+.body {
+	width: 90%;
+	margin: 0 auto;
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#mainheader{
+	animation-name: fade;
+	animation-duration: 1s;
+}
+#Headimg {
+	margin: 0 auto;
+	width: 100%;
+	border: solid 8px #eab92d;
+}
+#mainheader h2 {
+    background: #eab92d;
+    background: -moz-linear-gradient(top,  #eab92d 0%, #c79810 100%); 
+    background: -webkit-linear-gradient(top,  #eab92d 0%,#c79810 100%); 
+    background: linear-gradient(to bottom,  #eab92d 0%,#c79810 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eab92d', endColorstr='#c79810',GradientType=0 ); 
+	color:  #84561B;
+	width: 100%;
+	margin: -15px auto;
+	padding: 8px 8px 4px 8px;
+	font-size: 25px;
+}
+#maincontent{
+	width: 64%;
+	float: right;
+	margin-top: 30px;
+	color: white;
+	background-color: #FA810A;
+	background: linear-gradient(to bottom left, #FA810A, #FA810A,#FA810A,#FA810A, #F8F97A);
+	animation-name: fade;
+	animation-duration: 2s;
+}
+#maincontent h1 {
+	color: #84561B;
+	text-shadow: black 2px 2px;
+	padding: 10px;
+	background-color:#eab92d ;
+}
+#maincontent p {
+	padding-top: 15px;
+	padding-left: 9px;
+	float: left;
+	width: 68%;
+}
+#maincontent img {
+	width: 30%;
+	float: right;
+	width: 150px;
+	padding-right: 35px;
+	padding-bottom: 15px;
+}
+.content{
+	background-color: #FA810A;
+	width: 34%;
+	float: left;
+	margin-top: 30px;
+	position: relative;
+	animation-name: move;
+	animation-duration: 1s;
+}
+.content img {
+	padding-top: 4px;
+	width: 95%;
+}
+.content h1{
+	color: #84561B;
+	background-color:#eab92d ;
+	font-size: 0.9em;
+	padding: 5px ;
+	text-shadow: black 1px 1px;
+}
+.content p {
+	color: white;
+}
+#content-1{
+	background: linear-gradient(to bottom right, #FA810A, #FA810A,#FA810A,#FA810A, #F8F97A);
+}
+#content-1 button{
+	font-size: 25px;
+	background-color: #eab92d;
+	padding: 5px;
+	margin-bottom: 4px;
+}
+#content-1 p {
+	font-size: 1.2em;
+	padding: 5px 5px 10px 5px ;
+ }
+ #content-2{
+ 	color: white;
+ 	float: left;
+ 	display: none;
+ }
+ #content-2 button{
+	font-size: 25px;
+	background-color: #eab92d;
+	padding: 5px;
+	margin-bottom: 4px;
+}
+
+@keyframes move {
+	from {
+		right: 100%;
+	}
+	to {
+		right: 0;
+	}
+}
+
+@keyframes fade {
+from{
+	opacity: 0;
+}
+to{
+	opacity: 1;
+}
+}
